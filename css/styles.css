@@ -1,12 +1,44 @@
-/* цвет основной    #212121 */
-/* цвет вторичный   #757575 */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --akcent-color: #2196f3;
+}
+/* цвет  вторичный   #212121 */
+/* цвет  основной   #757575 */
 /* акцент #2196F3 */
 /* белый #FFFFFF */
 /* адрес в футере rgba(255, 255, 255, 0.6) */
+/* дополнительный цвет фона  #F5F4FA */
 body {
-  background-color: tomato;
-  color: teal;
+  background-color: #fff;
+  color: var(--primary-text-color);
 }
-ul {
+.list {
   list-style: none;
+}
+.logo {
+  color: #000;
+}
+.logo-akcent {
+  color: var(--akcent-color);
+}
+/*********** site-nav *********/
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--akcent-color);
+}
+/* ******section***** */
+.section .title {
+  color: var(--title-text-color);
+}
+/* ********features******* */
+.features-list .title {
+  color: var(--title-text-color);
+}
+/* *********team****** */
+.team-list .title {
+  color: var(--title-text-color);
 }
