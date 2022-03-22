@@ -116,7 +116,7 @@ body {
   background-color: var(--accent-color);
   color: #fff;
 }
-/* ******footer************ */
+/* ****************************footer***************************************** */
 .foot {
   color: #fff;
   background-color: #2f303a;
@@ -134,13 +134,32 @@ body {
   color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
 }
-/* **********portfolio**** */
+/* ***********************************portfolio************************************************ */
 .portfolio-list .link {
   color: var(--title-text-color);
   background-color: #f5f4fa;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: inherit;
 }
 .portfolio-list .link:hover,
 .portfolio-list .link:focus {
   color: #fff;
   background-color: var(--accent-color);
+}
+/* ****************works list**************** */
+.works-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--title-text-color);
+  letter-spacing: 0.06em;
+}
+.works-description {
+  font-size: 16px;
+  line-height: 1.9;
 }
