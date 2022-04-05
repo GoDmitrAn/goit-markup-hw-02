@@ -2,6 +2,8 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --bg-color: #2F303A;
+  --text-white-color: #fff;
 }
 /* цвет  вторичный   #212121 */
 /* цвет  основной   #757575 */
@@ -74,10 +76,12 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #2f303a;
+  color: var(--text-white-color);
+  
 }
-
+.hero-section{
+background-color: var(--bg-color); 
+}
 /* ******section***** */
 .section-title {
   color: var(--title-text-color);
@@ -114,25 +118,29 @@ body {
 /* ********button***** */
 .order {
   background-color: var(--accent-color);
-  color: #fff;
+  color: var(--text-white-color);
 }
 /* ****************************footer***************************************** */
 .foot {
-  color: #fff;
-  background-color: #2f303a;
+  color: var(--text-white-color);
+  
 }
-.foot-address .text {
-  font-style: normal;
-  font-weight: 400;
-  color: #ffffff;
-  background-color: #2f303a;
-}
+
 .foot-address .link {
   font-style: normal;
-  font-weight: 400;
-
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
-  background-color: #2f303a;
+ 
+}
+.foot-address a.maps-link{
+  color: var(--text-white-color);
+}
+.footer{
+  background-color: var(--bg-color); 
+}
+.foot-address .link:hover,
+.foot-address .link:focus{
+  color: var(--accent-color);
 }
 /* ***********************************portfolio************************************************ */
 .portfolio-list .link {
@@ -145,10 +153,11 @@ body {
   line-height: 1.6;
   text-align: center;
   letter-spacing: inherit;
+  cursor: pointer;
 }
 .portfolio-list .link:hover,
 .portfolio-list .link:focus {
-  color: #fff;
+  color: var(--text-white-color);
   background-color: var(--accent-color);
 }
 /* ****************works list**************** */
