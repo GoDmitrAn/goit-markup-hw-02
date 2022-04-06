@@ -3,7 +3,9 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --bg-color: #2F303A;
-  --text-white-color: #fff;
+  --btn-hover-color: #fff;
+  --maps-text-color: #fff;
+  --hero-title-color: #fff;
 }
 /* цвет  вторичный   #212121 */
 /* цвет  основной   #757575 */
@@ -38,6 +40,7 @@ body {
 .logo-accent {
   color: var(--accent-color);
 }
+
 /*********** site-nav *********/
 .site-nav .link {
   color: var(--title-text-color);
@@ -50,6 +53,9 @@ body {
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav a.current-page {
   color: var(--accent-color);
 }
 /* *********auth-nav***** */
@@ -76,11 +82,17 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--text-white-color);
+  color:var(--hero-title-color);
   
 }
 .hero-section{
 background-color: var(--bg-color); 
+}
+/* ****hero button***** */
+.order {
+  background-color: var(--accent-color);
+  color:#fff;
+  cursor: pointer;
 }
 /* ******section***** */
 .section-title {
@@ -93,8 +105,6 @@ background-color: var(--bg-color);
 /* ********features******* */
 .features-list .title {
   color: var(--title-text-color);
-
-  font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -115,14 +125,13 @@ background-color: var(--bg-color);
   /* identical to box height */
   text-align: center;
 }
-/* ********button***** */
-.order {
-  background-color: var(--accent-color);
-  color: var(--text-white-color);
+.our-team{
+  background-color: #F5F4FA;
 }
+
 /* ****************************footer***************************************** */
 .foot {
-  color: var(--text-white-color);
+  color:#fff;
   
 }
 
@@ -133,7 +142,7 @@ background-color: var(--bg-color);
  
 }
 .foot-address a.maps-link{
-  color: var(--text-white-color);
+  color:var(--maps-text-color);
 }
 .footer{
   background-color: var(--bg-color); 
@@ -157,12 +166,11 @@ background-color: var(--bg-color);
 }
 .portfolio-list .link:hover,
 .portfolio-list .link:focus {
-  color: var(--text-white-color);
+  color:var(--btn-hover-color);
   background-color: var(--accent-color);
 }
 /* ****************works list**************** */
 .works-title {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   color: var(--title-text-color);
@@ -171,4 +179,17 @@ background-color: var(--bg-color);
 .works-description {
   font-size: 16px;
   line-height: 1.9;
+}
+/* ---------------------hiiden element---------------- */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
